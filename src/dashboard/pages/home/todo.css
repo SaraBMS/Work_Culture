@@ -1,0 +1,87 @@
+.todo_goals-container {
+    margin: 1rem;
+}
+
+.todo_goals-container-header h1 {
+    text-align: center;
+    font-family: "HessGothicRoundNFW01-Bold", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.89px;
+    letter-spacing: 0.12em;
+}
+
+
+/* Container to hold the goals and the button */
+.todo_goals-container-goals_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    /* Allows scrolling when content exceeds the height */
+    width: 100%;
+    /* Ensure it takes the full width of the parent container */
+    max-height: 320px;
+    /* Max height for scrolling */
+}
+
+
+/* Each goal checkbox */
+.goal-checkbox.todo_goal-checkbox {
+    background: #018DFD;
+    color: #fff;
+    width: 100%;
+    /* Full width of the container */
+    height: 64px;
+    /* Fixed height */
+    min-height: 64px;
+}
+
+
+/* The plus button */
+.goal-checkbox.plus.todo_goal-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    /* Fixed height */
+    background: #018DFD;
+    /* Different background for the add button */
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* Space between the button and the first goal */
+}
+
+.goal-checkbox>span.todo_span::before {
+    background: #018DFD;
+    border: solid 2px #fff;
+}
+
+.goal-checkbox>span.todo_span::after {
+    top: 23px;
+}
+
+/* The span inside each goal checkbox */
+.todo_span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Pointer cursor for clickable span */
+}
+
+/* todo.css */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}

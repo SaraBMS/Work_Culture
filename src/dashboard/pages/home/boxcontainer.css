@@ -1,0 +1,42 @@
+.box-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 420px;
+    border: 0.3px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #0000001A, 0px 4px 4px 0px #0000000D, 0px 1px 0px 0px #0000000D;
+    background-image: linear-gradient(black, black), linear-gradient(0deg, #23C1FF, #23C1FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+}
+
+.box-container.filled {
+    background-image: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%) !important;
+    background-origin: content-box;
+    background-clip: content-box;
+    border: 0.3px solid transparent;
+    border-radius: 20px;
+    position: relative;
+}
+
+.box-container.filled::before {
+    content: '';
+    position: absolute;
+    top: -0.15px;
+    right: -0.15px;
+    bottom: -0.15px;
+    left: -0.15px;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(46, 167, 255, 0) 57.41%, rgba(46, 167, 255, 0.1) 100%),
+        linear-gradient(0deg, #23C1FF, #23C1FF);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+
+}

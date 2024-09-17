@@ -1,0 +1,77 @@
+.control_panel {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    margin-right: 1rem;
+}
+
+.control_panel-container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    overflow-y: scroll;
+}
+
+.control_panel-container .w_65 {
+    max-width: 65%;
+    width: 65%;
+}
+
+.control_panel-container .w_33 {
+    max-width: 33%;
+    width: 33%;
+}
+
+/* .team_mates.height_container {
+    min-height: 300px;
+    height: 350px;
+} */
+
+.control_panel-container .team_mates {
+    min-height: 300px;
+    height: 350px;
+}
+
+.control_panel-container .team_mates-mates_container {
+    height: 270px;
+}
+
+
+.control_panel-container .notification {
+    display: block;
+    position: relative !important;
+    width: 100% !important;
+    top: 0 !important;
+    right: 0 !important;
+    margin: 1rem 0;
+}
+
+.control_panel .admin_notification .notify_shadow {
+
+    box-shadow: none;
+    /* or the desired box-shadow */
+    border: none;
+    /* or the desired border */
+    border-radius: 0;
+    /* or the desired border-radius */
+    background-image: none;
+    /* or the desired background-image */
+}
+
+.control_panel-container .admin_notification .notification-container-content {
+    overflow-y: scroll;
+    height: 290px;
+    min-height: 290px;
+}
+
+.control_panel-container .admin_notification .notification-container-header {
+    margin-bottom: 1rem;
+}
+
+.control_panel-container .admin_notification .notification-container-content-notifi_field {
+    padding: 0.5rem !important;
+}

@@ -1,0 +1,206 @@
+.team_mates {
+    margin: 1rem 1.5rem;
+}
+
+.team_mates-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team_mates-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_mates-header-text h2 {
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    text-align: left;
+}
+
+.team_mates-header-text img {
+    padding-right: 1rem;
+}
+
+.team_mates-header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.team_mates-header-search label {
+    position: absolute;
+    left: -999999px
+}
+
+.team_mates-header-search input {
+    width: 100%;
+    height: 31px;
+    border-radius: 40px;
+    border: 0.5px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.team_mates-header-search button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: -30px;
+}
+
+.team_mates-header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_mates-header-buttons button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    width: 36px;
+    height: 36px;
+}
+
+.agency_select-container {
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* padding: 0.5rem 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_mates-mates_container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 413px;
+    overflow-y: auto;
+    padding: 1rem 0;
+}
+
+.team_mates-mates_container-feild {
+    width: 90%;
+    border-bottom: 0.2px solid #FFFFFFB5;
+}
+
+.team_mates-mates_container-feild-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.team_mates-mates_container-feild-container-info {
+    display: flex;
+    align-items: center;
+}
+
+.team_mates-mates_container-feild-container-info.w_42 {
+    width: 42%;
+}
+
+.rank-number {
+    margin: 0 10px;
+}
+
+.team_mates-mates_container-feild-container-info-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.team_mates-mates_container-feild-container-info-profile .pro_img.mate {
+    border: 2px solid;
+}
+
+.team_mates-mates_container-feild-container-info-profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+.teame_agency {
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+
+.team_mates-mates_container-feild-container-percentage {
+    width: 49px;
+    height: 26px;
+    padding: 7px;
+    border-radius: 7px;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_mates-mates_container-feild-container-button {
+    font-family: "Space Grotesk";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.team_mates-mates_container-feild-container-button button {
+    width: 105px;
+    height: 27px;
+    outline: none;
+    padding: 2px 16px 3px 16px;
+    border: none;
+    border-radius: 70px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+}
+
+.team_mates-mates_container-feild-container-button button:hover {
+    box-shadow: 0 0 10px var(--main-color);
+}

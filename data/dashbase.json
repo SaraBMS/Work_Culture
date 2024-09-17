@@ -1,0 +1,92 @@
+{
+  "DashboardAPI": [
+    {
+      "id": "2",
+      "email": "obada@o",
+      "completed": true,
+      "description": "",
+      "type": "Actual Work",
+      "percentage": 33
+    },
+    {
+      "id": "3",
+      "email": "leen@l",
+      "completed": true,
+      "description": "",
+      "type": "X Points",
+      "percentage": 73
+    },
+    {
+      "id": "4",
+      "email": "mohammed@h",
+      "completed": true,
+      "description": "",
+      "type": "X Points",
+      "percentage": 67
+    },
+    {
+      "id": "5",
+      "email": "leen@d",
+      "completed": true,
+      "description": "",
+      "type": "Actual Work",
+      "percentage": 78
+    },
+    {
+      "id": "6",
+      "email": "obada@r",
+      "completed": true,
+      "description": "",
+      "type": "Actual Work",
+      "percentage": 78
+    },
+    {
+      "id": "7",
+      "email": "",
+      "completed": true,
+      "description": "",
+      "type": "Actual Work",
+      "percentage": 17
+    },
+    {
+      "id": "8",
+      "email": "",
+      "completed": true,
+      "description": "work on about us page",
+      "type": "Actual Work",
+      "percentage": 73
+    },
+    {
+      "id": "9",
+      "email": "",
+      "completed": true,
+      "description": "x point work on setter page",
+      "type": "X Points",
+      "percentage": 63
+    },
+    {
+      "id": "10",
+      "email": "",
+      "completed": true,
+      "description": "",
+      "type": "Actual Work",
+      "percentage": 89
+    },
+    {
+      "id": "11",
+      "email": "",
+      "completed": false,
+      "description": "goal 111",
+      "type": "Actual Work",
+      "percentage": 89
+    },
+    {
+      "id": "12",
+      "email": "",
+      "completed": true,
+      "description": "x point goal",
+      "type": "X Points",
+      "percentage": 82
+    }
+  ]
+}

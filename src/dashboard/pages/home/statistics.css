@@ -1,0 +1,36 @@
+.setter-statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+
+.chart-container {
+    margin-top: 3rem;
+
+}
+
+
+.setter-statistics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1rem;
+}
+
+.setter-statistics-header h2 {
+    text-align: left !important;
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+}
+
+.setter-statistics-header .month-container {
+    color: #23C1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -1rem;
+}

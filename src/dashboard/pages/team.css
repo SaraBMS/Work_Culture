@@ -1,0 +1,45 @@
+.team {
+    margin-right: 1rem;
+}
+
+.taem_container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 0.5rem;
+}
+
+.taem_container-header .tap_team {
+    width: 100%;
+    height: 50px;
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taem_container-header .tap_team.active {
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+
+}
+
+.taem_container-header .tap_team.leagership {
+    border-top-left-radius: 20px;
+}
+
+.taem_container-header .tap_team.team_agencies {
+    border-top-right-radius: 20px;
+}
+
+.taem_container-header h2 {
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}

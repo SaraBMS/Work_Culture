@@ -1,0 +1,58 @@
+.styled-month-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Space Grotesk";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 0.3rem 0;
+}
+
+#selected-month {
+    margin-right: 0.3rem;
+    color: #23C1FF;
+    /* flex: 1; */
+    /* Take up available space to keep the SVG icon aligned to the right */
+}
+
+.month svg {
+    cursor: pointer;
+}
+
+.select-months {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    overflow: auto;
+    z-index: 10;
+    min-height: fit-content;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.select-month {
+    padding: 8px 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.select-month:hover {
+    background-color: #f0f0f026;
+}
+
+/* .month {
+    padding: 0.5rem;
+} */

@@ -1,0 +1,490 @@
+.canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    background-color: #000000;
+    height: 100vh;
+    z-index: 1000;
+    border: 2px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #0002FE -41.67%, #00FEFC 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    transition: width 0.5s ease;
+    border-radius: 8px;
+    display: none;
+    border-right: none;
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+}
+
+@keyframes dissolve {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dissolveOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.canvas.show {
+    display: block;
+    animation: dissolve 300ms ease-out forwards;
+}
+
+.canvas.hide {
+    animation: dissolveOut 300ms ease-out backwards;
+}
+
+.canvas_column {
+    width: 46px;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(300deg, #0002FE -41.67%, #00FEFC 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.canvas_column::before {
+    content: '';
+    position: absolute;
+    left: -100px;
+    width: 203px;
+    height: 38px;
+    background: linear-gradient(20deg, #0002FE -41.67%, #00FEFC 141.58%);
+    clip-path: polygon(42% -125%, 0 125%, 100% 100%);
+    transform: rotate(270deg);
+    z-index: 20;
+}
+
+.canvas_column::after {
+    content: '';
+    width: 38px;
+    height: 160px;
+    background-image: linear-gradient(278deg, #0002FE -20.67%, #00FEFC 136.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: -18px;
+    border-radius: 20px;
+}
+
+.arrow {
+    position: absolute;
+    left: -5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.canvas-container {
+    padding: 1rem 2rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 46px;
+    overflow: hidden;
+}
+
+
+.canvas-container-header {
+    display: flex;
+
+}
+
+
+.canvas-container-header-goal {
+    display: flex;
+    margin: 0 1rem 0 2rem;
+}
+
+.canvas-container-header-goal .goal-checkbox_canvas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Gilroy";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: center;
+    max-width: 100%;
+    width: 279px;
+    height: 45px;
+    border-radius: 8px;
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    margin-top: 0rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Input */
+.canvas-container-header-goal .goal-checkbox_canvas input {
+    appearance: none;
+    z-index: -1;
+    position: absolute;
+
+}
+
+/* Span */
+.canvas-container-header-goal .goal-checkbox_canvas .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+
+}
+
+/* Box */
+.canvas-container-header-goal .goal-checkbox_canvas .circle::before {
+    content: "";
+    display: inline-block;
+    margin: 0 0px 0 -5rem;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    vertical-align: top;
+    transition: border-color 0.2s, background-color 0.2s;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* Checkmark */
+.goal-checkbox_canvas .circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 7px;
+    height: 3px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
+    transform: translate(3px, 4px) rotate(-45deg);
+}
+
+.goal-checkbox_canvas>input:checked+span::before,
+.goal-checkbox_canvas>input:indeterminate+span::before {
+    background-image: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%) !important;
+
+}
+
+.goal-checkbox_canvas>input:checked+span::after,
+.goal-checkbox_canvas>input:indeterminate+span::after {
+    border-color: #fff;
+}
+
+
+
+.canvas-container-header-select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.styled-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: "Gilroy";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: center;
+    max-width: 100%;
+    width: 220px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+
+    color: #fff;
+
+    position: relative;
+}
+
+
+#selected-value {
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.select-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.select-option {
+    padding: 10px;
+    cursor: pointer;
+    color: transparent;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+/* .select-options:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.286)), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+} */
+
+.dropdown-icon {
+    margin-left: 8px;
+}
+
+.canvas-container-ids {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.canvas-container-ids .decrip {
+    font-family: "Gilroy";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: #FFFFFF96;
+    margin-top: 1rem;
+}
+
+.canvas-container-ids .decrip>span {
+    font-family: "Gilroy";
+    font-size: 14px;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+.canvas-container-ids .decrip>span .this_setter {
+    font-size: 9px;
+    color: #fff;
+}
+
+.canvas-container-goal_descrip {
+    margin-top: 1rem;
+}
+
+.canvas-container-goal_descrip .goal_descrip_box {
+    max-width: 105%;
+    width: 105%;
+    height: fit-content;
+    min-height: 213px;
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #0000001A, 0px 4px 4px 0px #0000000D, 0px 1px 0px 0px #0000000D;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    color: #FFFFFFCC;
+    padding: 1rem 2rem;
+}
+
+
+.canvas-container-goal_descrip textarea::placeholder {
+    font-family: "Gilroy";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: #FFFFFFCC;
+}
+
+.canvas-container-goal_descrip textarea {
+    outline: none;
+    resize: none;
+}
+
+.canvas-container-actual_content {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.canvas-container-actual_content-box {
+    max-width: 105%;
+    width: 105%;
+    height: fit-content;
+    min-height: 160px;
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #0000001A, 0px 4px 4px 0px #0000000D, 0px 1px 0px 0px #0000000D;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    color: #FFFFFFCC;
+    padding: 1rem 2rem;
+}
+
+.canvas-container-actual_content-box-title {
+    font-family: "Gilroy";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: #FFFFFFCC;
+}
+
+.canvas-container-actual_content-box .attachment_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.canvas-container-actual_content-box .attachment_container-box {
+    max-width: 50%;
+    width: 50%;
+    height: fit-content;
+    min-height: 62px;
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #0000001A, 0px 4px 4px 0px #0000000D, 0px 1px 0px 0px #0000000D;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    color: #FFFFFFCC;
+    /* padding: 1rem 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attachment_container-box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFFCC;
+    margin: 0 0.5rem;
+}
+
+.attachment_container-box-text .up_text {
+    font-family: "Gilroy";
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+}
+
+.attachment_container-box-text .bottom_text {
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+}
+
+.attachment_container-box-text .bottom_text span {
+    cursor: pointer;
+    color: transparent;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+}
+
+.canvas-container-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+    margin-right: -1rem;
+}
+
+.canvas-container-buttons .save_button {
+    width: 176px;
+    height: 48px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px 0px #A852054D;
+    background: linear-gradient;
+    background-image: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.canvas-container-buttons .cancel_button {
+    width: 48px;
+    height: 18px;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1115px) {
+    .styled-select {
+        width: 160px;
+    }
+
+    .canvas-container-header-goal .goal-checkbox_canvas {
+        width: 219px;
+    }
+}

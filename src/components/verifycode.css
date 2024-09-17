@@ -1,0 +1,211 @@
+.verify__container {
+    display: flex;
+    overflow: hidden;
+    color: #fff;
+}
+
+.verify__container-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem 3rem;
+}
+
+.verify__container-content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    flex-direction: column;
+}
+
+.verify__container-content-header img {
+    width: 164px;
+    height: 40.19px;
+}
+
+.verify__container-content-header h1 {
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.52px;
+    color: var(--font-color);
+    margin: 2rem 0rem 1rem;
+}
+
+
+.verify__container-content-header p {
+    width: 373px;
+    font-family: var(--font-family);
+    font-size: 17px;
+    line-height: 21.76px;
+    text-align: center;
+
+}
+
+.verify__container-content-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.verify__container-content-inputs input {
+    background-color: transparent;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 23.54px;
+    width: 92px;
+    height: 92px;
+    text-align: center;
+    outline: none;
+    border: 2px solid var(--main-color);
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.verify__container-content-inputs input::placeholder {
+    color: var(--font-color);
+}
+
+.verify__container-content-inputs input:hover,
+.verify__container-content-inputs input:focus,
+input::selection {
+
+    color: var(--main-color);
+}
+
+
+.verify__container-content-inputs label {
+    position: absolute;
+    left: -9999999px;
+}
+
+.verify__container-content-inputs .verify {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29.02px;
+    width: 100%;
+    height: 64px;
+    cursor: pointer;
+    background: var(--gradient-color);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    margin-top: 1rem;
+    color: var(--font-color);
+    outline: none;
+    border: none;
+}
+
+.verify__container-content-inputs .resend {
+    background: transparent;
+    border-color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29.02px;
+    width: 100%;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    margin-top: 1rem;
+    color: var(--font-color);
+    outline: none;
+
+
+}
+
+.verify__container-content-inputs button:hover {
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.verify__container-content-inputs .empty {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.verify__container-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+
+}
+
+.verify__container-image img {
+    height: 100vh;
+}
+
+
+.verify_form {
+    display: block;
+}
+
+
+
+
+@media screen and (max-width:1025px) {
+
+    .verify__container {
+        flex-direction: column-reverse;
+    }
+
+    .verify__container-image {
+        justify-content: flex-start;
+    }
+
+    .verify__container-image img {
+        height: 80vh;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .verify__container-content-header img {
+        width: 165px;
+        height: 41px;
+    }
+
+    .verify__container-content {
+        padding: 0rem;
+    }
+
+    .verify__container-content-header h1 {
+        font-size: 30px;
+    }
+
+    .verify__container-content-header p {
+        font-size: 15px;
+    }
+
+
+    .verify__container-content-inputs input {
+        width: 80px;
+        height: 80px;
+    }
+
+    .verify__container-content-inputs button {
+        height: 55px;
+    }
+
+    .verify__container-image img {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .verify__container-content-inputs input {
+        width: 70px;
+        height: 70px;
+    }
+}

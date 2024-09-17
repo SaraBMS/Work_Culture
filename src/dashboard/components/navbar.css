@@ -1,0 +1,160 @@
+.navbar {
+    margin-left: -1rem;
+}
+
+.navcontainer {
+    padding: 0.5rem;
+    width: calc(100% - 60px);
+    position: fixed;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navcontainer.active {
+    width: calc(100% - 256px);
+}
+
+.navcontainer-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: -1rem;
+
+}
+
+.pro_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 75%;
+    object-fit: cover;
+    box-shadow: 0px 11px 34px 0px #23C1FF38;
+    border: 1px solid var(--main-color);
+    /* margin-top: 1rem; */
+}
+
+.notifi_img {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+.navbar-setter-text {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+
+
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 1.5rem; */
+    padding: 1.5rem 0;
+}
+
+.navbar-setter-button {
+    margin-right: 2rem;
+    width: 95px;
+    height: 38px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    font-family: 'Space Grotesk';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.additional-content-left {
+    margin-left: 1rem;
+}
+
+.additional-content-rigth {
+    display: flex;
+}
+
+.SetterChange {
+    margin-right: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+
+}
+
+.SetterChange-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.SetterChange>button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+}
+
+.notification-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.additional_content_container-header-text {
+    font-family: "Gilroy";
+    font-size: 32px;
+    font-weight: 600;
+    /* line-height: 22px; */
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+.additional-content-left-refresh button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+    width: 36px;
+    height: 36px;
+}
+
+.additional-content-right-teammate {
+    margin-right: 5rem;
+    color: #fff;
+}
+
+.team_mates-mates_container-feild-container-button.mate_button {
+    cursor: pointer;
+    z-index: 200;
+    position: relative;
+}
+
+.team_mates-mates_container-feild-container-button.mate_button button {
+    border-radius: 8px;
+}

@@ -1,0 +1,66 @@
+.setterPercentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.setterPercentage-container {
+    width: 176px;
+    height: 176px;
+    position: relative;
+}
+
+.setterPercentage-container-outer {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    /* padding: 40px; */
+    border: 35px solid #1B1F2E;
+}
+
+.setterPercentage-container-inner {
+    width: 101px;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#number {
+    font-family: "Gilroy";
+    font-size: 29.89px;
+    font-weight: 700;
+    line-height: 36.04px;
+    letter-spacing: -0.35164833068847656px;
+    text-align: center;
+
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 35px;
+    stroke-dasharray: 450;
+}
+
+.svg_circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.setterPercentage-name {
+    font-family: "Gilroy";
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.setterPercentage-pending {
+    margin: 3rem 0;
+}

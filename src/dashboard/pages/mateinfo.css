@@ -1,0 +1,90 @@
+ /* .mate_info {} */
+
+ .mate_info-container {
+     margin: 1rem;
+ }
+
+ .mate_info_img {
+     width: 119px;
+     height: 119px;
+ }
+
+ .profile_info_mate {
+     width: 100% !important;
+     flex-direction: column;
+     align-items: flex-start !important;
+ }
+
+ .mate_info-container-header {
+     display: flex;
+ }
+
+ .name_mate {
+     font-size: 28px;
+ }
+
+ .mate_agency {
+     font-size: 16px;
+     margin: 0.5rem 0;
+ }
+
+ .mate_info-container-details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-family: "Gilroy";
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 20px;
+     letter-spacing: -0.02em;
+     text-align: center;
+     color: #FFFFFF;
+     margin-top: 2rem;
+     margin-left: 0rem;
+     margin-right: 1rem;
+     width: 100%;
+     gap: 9rem;
+ }
+
+ .mate_info-container-details-mate_details {
+     margin-top: 1rem;
+     width: 100%;
+ }
+
+ .mate_info-container-details-mate_details-field {
+     display: flex;
+     margin-bottom: 0.5rem;
+ }
+
+ .detail_mate {
+     margin-left: 1rem;
+ }
+
+ .mate_info-container-details-bio {
+     width: 100%;
+     margin-left: 5rem;
+     margin-right: 1rem;
+ }
+
+ .bio {
+     font-family: "DM Sans";
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 20px;
+     letter-spacing: -0.02em;
+     text-align: left;
+     background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+     -webkit-background-clip: text;
+     /* For Webkit browsers */
+     -webkit-text-fill-color: transparent;
+     /* For Webkit browsers */
+     background-clip: text;
+     /* Standard property */
+     color: transparent;
+
+ }
+
+ .bio_paragraph {
+     text-align: left;
+     width: 100%;
+ }

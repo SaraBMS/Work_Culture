@@ -1,0 +1,135 @@
+.aboutus {
+    margin-right: 1rem;
+}
+
+.aboutus-container {
+    margin: 1rem;
+    overflow-y: scroll;
+    max-height: 520px;
+    height: 500px;
+}
+
+.aboutus-container-header h1,
+.faq-container-header h1 {
+    font-family: "Gilroy";
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutus-container-bio {}
+
+.aboutus-container-bio p {
+    font-family: "Gilroy";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: #FEFEFE;
+}
+
+.faq-container {
+    margin-top: 3rem;
+}
+
+
+.faq-container-questions {
+    margin: 0.5rem 1rem;
+}
+
+.faq-container-questions-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #8896A6;
+    margin-bottom: 1rem;
+}
+
+.faq-container-questions-content-qa {
+    margin-bottom: 2rem;
+}
+
+.faq-container-questions-content-qa-question {
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 29px;
+    text-align: left;
+    color: #FEFEFE;
+}
+
+.faq-container-questions-content-qa-answer {
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    color: #7EDBFF;
+    display: none;
+    transition: 0.3s ease;
+}
+
+.faq-container-questions-content-qa-answer.show {
+    display: block;
+    animation: dissolve 300ms ease-out forwards;
+}
+
+
+
+.faq-container-questions-content-button {}
+
+.faq-container-questions-content-button button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 16px;
+    height: 17px;
+}
+
+.faq-container-questions-more_faqs {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FEFEFE;
+
+}
+
+.faq-container-questions-more_faqs button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.faq-container-questions-more_faqs button:hover {
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.faq-container-questions-more_faqs button svg path {
+    stroke: #fff;
+
+}
+
+.faq-container-questions-more_faqs button:hover svg path {
+    stroke: url(#faq-gradient);
+}
+
+.faq-container-questions-more_faqs span {
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 29px;
+    text-align: center;
+    margin-right: 0.2rem;
+}

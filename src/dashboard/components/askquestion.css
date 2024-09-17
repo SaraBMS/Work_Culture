@@ -1,0 +1,125 @@
+.askquestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.askquestion.show {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.askquestion-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 34px 0px #23C1FF80;
+    width: 760px;
+    height: 467px;
+    border-radius: 24px;
+}
+
+.askquestion-container-header h2 {
+    font-family: "Gilroy";
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.askquestion-container-question_field {
+    margin-top: -1rem;
+}
+
+.askquestion-container-question_field label {
+    position: absolute;
+    left: -9999999px;
+}
+
+.askquestion-container-question_field textarea {
+    width: 619px;
+    height: 190px;
+    border-radius: 7px;
+    border: 0.7px solid var(--sd, #FFFFFF);
+    outline: none;
+    background-color: #000000;
+    margin: 3rem 0;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.54px;
+    text-align: left;
+    padding: 1rem 2rem;
+    resize: none;
+}
+
+.askquestion-container-question_field textarea:hover,
+.askquestion-container-question_field textarea:focus {
+    border: 0.7px solid transparent;
+    box-shadow: 0px 10px 10px 0px #0000001A, 0px 4px 4px 0px #0000000D, 0px 1px 0px 0px #0000000D;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+}
+
+.askquestion-container-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-right: -1rem;
+}
+
+.askquestion-container-buttons .cancel_button {
+    width: 48px;
+    height: 18px;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.askquestion-container-buttons .save_button {
+    width: 176px;
+    height: 48px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px 0px #A852054D;
+    background: linear-gradient;
+    background-image: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.askquestion-container-buttons .save_button:hover {
+    box-shadow: 0 0 10px var(--main-color);
+}

@@ -1,0 +1,171 @@
+.analytics {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    /* margin-right: 1rem; */
+}
+
+.analytics-container {
+    margin-top: 2rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.analytics-container-header {
+    display: flex;
+    /* margin-right: 0.5rem; */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.analytics-container .w_30 {
+    width: 30%;
+    border-radius: 26px;
+    min-height: 149px;
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.analytics-container .box-container.filled::before {
+    border-radius: 26px;
+}
+
+.analytics-container-header-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.analytics-container-header-task-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.analytics-container-header-task-right {}
+
+.analytics-container-header-task-left .overdue_tasks {
+    font-family: "Gilroy";
+    font-size: 20.8px;
+    font-weight: 600;
+    line-height: 36.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #E9EDF7;
+}
+
+.analytics-container-header-task-left .overdue_tasks_value {
+    font-family: "DM Sans";
+    font-size: 31.2px;
+    font-weight: 700;
+    line-height: 41.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.analytics-container-body {
+    display: flex;
+    /* margin-right: 0.5rem; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.analytics-container .w_20 {
+    width: 19%;
+    border-radius: 26px;
+    min-height: 428px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analytics-container-body-agency {}
+
+.analytics-container-body-agency-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analytics-container-body-agency-top .agency_name {
+    font-family: "Gilroy";
+    font-size: 20.8px;
+    font-weight: 600;
+    line-height: 36.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #E9EDF7;
+    margin-bottom: 1rem;
+}
+
+.analytics-container-body-agency-top .agency_percentage {
+    width: 101px;
+    height: 101px;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans";
+    font-size: 31.2px;
+    font-weight: 700;
+    line-height: 41.6px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.analytics-container-body-agency-bottom {}
+
+
+
+.analytics-container-body-agency-bottom-mate {
+    min-height: 230px;
+    height: 230px;
+    overflow-y: scroll;
+}
+
+
+/* .analytics-container .devsyro-border.filled::before {
+    border: 1px solid #05CD99;
+} */
+
+/* .analytics-container .product-syro-border.filled::before {
+    border: 1px solid #23C1FF;
+} */
+
+.analytics-container .artsyro-border.filled::before {
+    border: 1px solid #9824FF;
+    background: none;
+}
+
+.analytics-container .aisyro-border.filled::before {
+    border: 1px solid #FAFF00;
+    background: none;
+}
+
+.analytics-container .business-agency-border.filled::before {
+    border: 1px solid #09C76A;
+    background: none;
+}
+
+.analytics-container-mates_container {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center
+}

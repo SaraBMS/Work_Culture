@@ -1,0 +1,185 @@
+.notification {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 30%;
+    height: 35%;
+    display: none;
+}
+
+@media screen and (max-width:1040px) {
+
+    .notification {
+        width: fit-content;
+    }
+}
+
+.notification.show {
+    display: block;
+}
+
+.notify_shadow {
+    box-shadow: 0px 14px 24px 0px #23C1FF24;
+    min-height: 134%;
+    height: 134%;
+    border: 0.6px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(black, black),
+        linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+}
+
+.notification-container {
+    margin: 0.5rem 1.5rem;
+}
+
+.notification-container-header {
+    display: flex;
+
+}
+
+.notification-container-content {
+    overflow-y: scroll;
+    height: 240px;
+    min-height: 240px;
+}
+
+.notification-container-header.admin_select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-container-header-main {
+    display: flex;
+    margin-bottom: -0.5rem;
+}
+
+.notification-container-header-select {
+    border: 0.4px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 0.2rem; */
+}
+
+
+
+
+.notification-container-header-text h3 {
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    background: linear-gradient(103.18deg, #00FEFC -41.67%, #0002FE 141.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.notification-container-header-button {
+    /* margin-left: 0.5rem; */
+}
+
+.notification-container-header-button button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.notification-container-content-notifi_field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin: 0 0.5rem 0.5rem;
+
+}
+
+.notification-container-content-notifi_field-mark_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    width: 100%;
+
+}
+
+.notification-container-content-notifi_field-mark_container-mark {
+    border-radius: 50%;
+    font-family: "Gilroy";
+    font-size: 32px;
+    font-weight: 700;
+    width: 55px;
+    height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* .notification-container-content-notifi_field-mark_container-mark.hard_reminder {
+    background-color: #FF003D;
+}
+
+.notification-container-content-notifi_field-mark_container-mark.soft_reminder {
+    background-color: #FFC85C;
+
+}
+
+.notification-container-content-notifi_field-mark_container-mark.good_job {
+    background-color: #22A364;
+
+} */
+.notification-container-header-history {
+    margin-right: 1rem;
+}
+
+.notification-container-content-notifi_field-text {
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+.notification-container-content-notifi_field-text-header h3 {
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.notification-container-content-notifi_field-text-paragraph p {
+    font-family: "Gilroy";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: #FFFFFFB2;
+
+}
+
+.notification-container-content-notifi_field-text-date {
+    font-family: "Gilroy";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: #4BF0FCBF;
+}
+
+.notification-container-content-notifi_field-text-date svg {
+    margin-right: 0.5rem;
+}

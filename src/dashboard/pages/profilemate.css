@@ -1,0 +1,113 @@
+.profile_mate {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    margin-right: 1rem;
+    margin-top:-4rem;
+}
+
+.profile_mate-container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+    overflow-y: scroll;
+    /* margin-bottom: 5rem; */
+}
+
+
+.profile_mate-container .w_58 {
+    max-width: 58%;
+    width: 58%;
+    min-height: 314px;
+}
+
+.profile_mate-container .w_39 {
+    max-width: 39%;
+    width: 39%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 314px;
+}
+
+.profile_mate-container .w_50_border {
+    max-width: 50%;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+    min-height: 459px;
+    height: fit-content;
+}
+
+.profile_mate-container .w_50_border::before {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    border-left: 1px solid transparent;
+}
+
+.profile_mate-container .w_50 {
+    max-width: 50%;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 0;
+    border: none;
+    min-height: 459px;
+    height: fit-content;
+}
+
+.profile_mate-container .w_50::before {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.profile_mate-container .setterPercentage {
+    flex-direction: row !important;
+    gap: 2rem;
+
+}
+
+.profile_mate-container .xpoint {
+    margin: 0rem 1.5rem;
+}
+
+.profile_mate-container .actualwork {
+    margin: 0rem 1.5rem;
+}
+
+.profile_mate-container .actualwork__goals-container-goals_input {
+    max-height: 330px;
+}
+
+.profile_mate-container .actualwork-goal-field {
+    max-width: 100%;
+}
+
+.profile_mate-container .xgoal-checkbox.xpoint_xgoal-checkbox {
+    max-width: 80%;
+}
+
+
+.profile_mate-container .actualwork-goal {
+    justify-content: center;
+}
+
+.profile_mate-container .xpoint_goals-container-goals_input {
+    max-height: 330px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actual_goal_box {
+    display: flex;
+    margin-bottom: 1rem;
+    min-height: 459px;
+    height: fit-content;
+}

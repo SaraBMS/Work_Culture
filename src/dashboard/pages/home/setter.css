@@ -1,0 +1,76 @@
+.setter {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    margin-right: 1rem;
+}
+
+
+.setter-container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 6rem;
+}
+
+.actual_goal_box {
+    display: flex;
+    margin-bottom: 1rem;
+    min-height: 459px;
+    height: fit-content;
+}
+
+.setter-container .todo_goals {
+    max-width: 40%;
+    border-radius: 0;
+    border: none;
+    border-bottom-left-radius: 20px;
+    min-height: 459px;
+    height: fit-content;
+}
+
+.setter-container .todo_goals::before {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.setter-container .done_goals {
+    max-width: 40%;
+    border-radius: 0;
+    border: none;
+    min-height: 459px;
+    height: fit-content;
+}
+
+.setter-container .done_goals::before {
+    border-radius: 0;
+    border: none;
+    padding-bottom: 0;
+}
+
+.setter-container .setter_percentage {
+    max-width: 20%;
+    border-radius: 0;
+    border: none;
+    border-bottom-right-radius: 20px;
+    min-height: 459px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setter-container .setter_percentage::before {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+
+.setter-container .xpoint_setter {
+    max-width: 35%;
+}
